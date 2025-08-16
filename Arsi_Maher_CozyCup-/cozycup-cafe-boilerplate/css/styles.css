@@ -6,14 +6,15 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f2e0;
+    background-color: #fffbf2;
     color: #4c3c32;
 }
 
+
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background-color: #ffe7e7;
+    box-shadow: 1px 2px 1px 1px #f7dfdf(100, 106, 15, 0.1);
+    padding: 2px 8px 6px 2px;
 }
 
 nav {
@@ -30,6 +31,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    font-size: 25px;
 }
 
 nav a {
@@ -40,38 +42,31 @@ nav a {
 }
 
 nav a:hover {
-    color: #7e685b;
+    color: #ae6f91;
 }
 
 .hero {
     text-align: center;
-    padding: 150px 0;
-    background-image: url('hero-bg.jpg');
+    padding: 280px 10px;
+    background-image: url('trylogo.jpg');
     background-size: cover;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    background-position: center;
+    color: rgb(166, 103, 103);
+    box-shadow: 10px 20px 30px 20px rgba(251, 194, 194, 0.3);
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4c3c32;
-    color: white;
+    background-color:#efbdbd;
+    color: rgb(21, 10, 10);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    margin-top: 80px;
 }
 
 .cta-button:hover {
-    background-color: #7e685b;
+    background-color: #dbc2c2;
 }
 
 .menu {
@@ -84,8 +79,52 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.photo-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.menu-item img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #60412d;
+}
+
+.menu-item p:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-item p:last-of-type {
+    font-size: 15px;
+    color: #7e685b;
+}
+
+/*your part below-------------------------------------*/
+
 .about {
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     background-color: #ede4d6;
 }
